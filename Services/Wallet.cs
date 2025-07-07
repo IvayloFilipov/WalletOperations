@@ -2,8 +2,10 @@
 {
     public class Wallet : IWallet
     {
+        // Exposing Balance as a read-only property from outside, while allowing internal updates.
         public decimal Balance { get; private set; }
 
+        // The Random object determines the win/loss outcome in PlayGame.
         private Random random = new Random();
 
         public void Deposit(decimal amount)
