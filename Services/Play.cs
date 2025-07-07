@@ -4,18 +4,22 @@
     {
         private readonly IWallet wallet;
 
+        // Inject IWallet (DI via constructor). Due to the IWallet three methods (Deposit, Withdraw and PlayGame) are needed here in RunTheGame().
         public Play(IWallet wallet )
         {
             this.wallet = wallet;
         }
 
+        // Encapsulate the main logic of the game flow in a class (like in the RunTheGame() below).
         public Task RunAsync()
         {
             RunTheGame();
             
             return Task.CompletedTask;
         }
-        public void RunTheGame()
+
+        // Encapsulated the game logic inside RunTheGame().
+        private void RunTheGame()
         {
             Console.WriteLine("Hello and welcome to the Player Wallet Gaming Console!");
             Console.WriteLine("Please, submit an action:");
@@ -29,7 +33,7 @@
             while (running)
             {
                 Console.Write("Please enter your choice: ");
-                string choice = Console.ReadLine();
+                string? choice = Console.ReadLine()?.Trim();
 
                 switch (choice)
                 {
@@ -83,7 +87,7 @@
                         break;
 
                     default:
-                        Console.WriteLine("Invalid input option. Please try again.");
+                        Console.WriteLine("Invalid input option. Input cannot be empty. Please try again.");
 
                         break;
                 }
