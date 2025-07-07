@@ -62,6 +62,7 @@
                 Console.WriteLine($"JACKPOT! Congrats - you won ${winAmount:0.00}!");
             }
 
+            // Updates the player's balance and displays the updated balance, rounded to 2 decimal places.
             Balance = Balance - bet + winAmount;
             Console.WriteLine($"Your current balance is ${Math.Round(Balance, 2)}");
         }
