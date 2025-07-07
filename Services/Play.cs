@@ -60,7 +60,7 @@
                         }
                         else
                         {
-                            Console.WriteLine("Invalid amount.");
+                            Console.WriteLine("Invalid amount. The amount must be positive number");
                         }
 
                         break;
