@@ -1,7 +1,4 @@
-﻿using Services;
-using LogicExt;
-
-namespace RefactoringPlan
+﻿namespace RefactoringPlan
 {
     public class QuitCommand : ICommand
     {

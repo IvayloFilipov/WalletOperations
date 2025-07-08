@@ -1,4 +1,4 @@
-﻿namespace LogicExt
+﻿namespace RefactoringPlan
 {
     public interface ICommand
     {
