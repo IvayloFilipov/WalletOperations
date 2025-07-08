@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlayerWalletOperations.Test", "PlayerWalletOperations.Test\PlayerWalletOperations.Test.csproj", "{51D9185E-B0E8-438B-A382-536860D59844}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringPlan", "LogicExt\RefactoringPlan.csproj", "{04AAF943-54F1-4231-B574-0E5D5618BE5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{51D9185E-B0E8-438B-A382-536860D59844}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51D9185E-B0E8-438B-A382-536860D59844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51D9185E-B0E8-438B-A382-536860D59844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04AAF943-54F1-4231-B574-0E5D5618BE5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04AAF943-54F1-4231-B574-0E5D5618BE5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04AAF943-54F1-4231-B574-0E5D5618BE5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04AAF943-54F1-4231-B574-0E5D5618BE5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
